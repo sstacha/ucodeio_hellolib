@@ -1,4 +1,6 @@
 import argparse
+from pathlib import Path
+import site
 
 def get_hello_message(name=None):
     if name:
@@ -14,4 +16,7 @@ if __name__ == "__main__":
     if args.verbose:
         print('verbose: True')
         print(f'name: {args.name}')
+        print(f'__file__: {Path(__file__).resolve()}')
+        print(f'site packages: {site.getsitepackages()}')
+
     print (get_hello_message(args.name))

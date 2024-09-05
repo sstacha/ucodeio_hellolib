@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(name='ucodeio_hellolib',
-      version='0.2',
+      version='0.3',
       description='A simple hello library and function that returns hello <name>',
       long_description=long_description,
       long_description_content_type="text/markdown",
@@ -18,5 +18,5 @@ setuptools.setup(name='ucodeio_hellolib',
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
       ],
-      python_requires='>=3.6',
+      python_requires='>=3.8',
 )
